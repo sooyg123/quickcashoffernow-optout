@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sell your house fast for cash. No fees, no repairs. QuickCash makes it easy." />
+  <title>QuickCash | Sell Your House Fast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #fff; color: #222; font-size: 16px; }
+    header { background: #d62828; padding: 1rem; color: #fff; position: sticky; top: 0; z-index: 999; display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; }
+    header img { height: 50px; }
+    nav a { color: #fff; margin: 0.5rem 1rem 0.5rem 0; text-decoration: none; font-weight: 600; display: inline-block; }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                  url('background.jpg') center center / cover no-repeat;
+      padding: 3rem 1rem;
+      text-align: center;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    }
+    .btn-primary { background: #d62828; color: #fff; padding: 1rem 1.5rem; border: none; font-weight: bold; cursor: pointer; border-radius: 5px; font-size: 1rem; width: 100%; max-width: 300px; }
+    .section { padding: 3rem 1rem; max-width: 1000px; margin: auto; }
+    .section h2 { font-size: 1.8rem; margin-bottom: 1rem; text-align: center; }
+    .step-box { display: flex; flex-direction: column; gap: 2rem; margin-top: 2rem; }
+    .step-box div { background: #f1f1f1; padding: 1rem; border-radius: 10px; text-align: center; }
+    .why-us ul { list-style-type: disc; padding-left: 1.5rem; font-size: 1rem; }
+    .form-section input, .form-section textarea { width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+    .form-section form { background: #ffffffd9; padding: 2rem; border-radius: 10px; }
+    .testimonials blockquote { margin-bottom: 1rem; padding-left: 1rem; border-left: 4px solid #d62828; font-style: italic; }
+    footer { background: #222; color: #eee; padding: 2rem 1rem; text-align: center; font-size: 0.9rem; }
+    @media (min-width: 768px) {
+      .hero h1 { font-size: 2.5rem; }
+      .step-box { flex-direction: row; justify-content: space-between; }
+      .step-box div { width: 30%; }
+      .btn-primary { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="QuickCash logo" />
+    <nav>
+      <a href="#how">How It Works</a>
+      <a href="#why">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#form">Get Offer</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Sell Your House Fast — For Cash</h1>
+    <p>No Repairs. No Fees. No Stress. Get a Fair Offer in 24 Hours.</p>
+    <a href="#form"><button class="btn-primary">Get My Cash Offer Now</button></a>
+  </section>
+
+  <section class="section" id="how">
+    <h2>How It Works</h2>
+    <div class="step-box">
+      <div>
+        <h3>Step 1</h3>
+        <p>Tell us about your property using the form or a quick call.</p>
+      </div>
+      <div>
+        <h3>Step 2</h3>
+        <p>We’ll send you a no-obligation fair cash offer within 24 hours.</p>
+      </div>
+      <div>
+        <h3>Step 3</h3>
+        <p>You pick the closing date and get paid — fast and easy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" id="why">
+    <h2>Why Choose QuickCash?</h2>
+    <ul>
+      <li>No cleaning, staging, or repairs needed</li>
+      <li>We pay all closing costs</li>
+      <li>Close in as little as 7 days</li>
+      <li>Zero commissions or hidden fees</li>
+      <li>Friendly, local experts you can trust</li>
+    </ul>
+  </section>
+
+  <section class="section form-section" id="form">
+    <h2>Get Your Free, No-Obligation Cash Offer</h2>
+    <form id="lead-form">
+      <input type="text" name="name" placeholder="Your Full Name" required />
+      <input type="text" name="address" placeholder="Property Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <textarea name="message" placeholder="Tell us about your situation (optional)" rows="4"></textarea>
+      
+    <div class="form-check mt-3">
+        <input type="checkbox" class="form-check-input" id="consent" required>
+        <label class="form-check-label" for="consent">
+            I agree to the <a href="/terms.html" target="_blank">Terms of Service</a> and <a href="/privacy.html" target="_blank">Privacy Policy</a>.
+        </label>
+    </div>
+    <button type="submit"
+     class="btn-primary">Get My Offer</button>
+    
+<div style="margin-top: 20px;">
+  <label style="display: block; margin-bottom: 10px;">
+    <input type="checkbox" required />
+    I agree to the <a href="terms.html" target="_blank">Terms & Conditions</a> and
+    <a href="privacy.html" target="_blank">Privacy Policy</a>.
+    By submitting this form, you consent to receive SMS messages and/or emails from QuickCashOfferNow.
+    To unsubscribe, follow the instructions provided in our communications.
+    Msg & data rates may apply for SMS. Your information is secure and will not be sold to third parties.
+    Text HELP for HELP, text STOP to cancel.
+  </label>
+</div>
+</form>
+    <script>
+      document.getElementById("lead-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        fetch("https://hooks.zapier.com/hooks/catch/22974297/27f3v9w/", {
+          method: "POST",
+          body: data
+        }).then(() => {
+          window.location.href = "thankyou.html";
+        }).catch((err) => {
+          alert("There was an error. Please try again.");
+        });
+      });
+    </script>
+  </section>
+
+  <section class="section testimonials" id="testimonials">
+    <h2>What Our Clients Say</h2>
+    <blockquote>
+      “They made everything so easy. I didn’t have to lift a finger.” – Brenda, KY
+    </blockquote>
+    <blockquote>
+      “We were in foreclosure and they saved our credit!” – James & Latasha, IN
+    </blockquote>
+    <blockquote>
+      “Sold in 5 days after sitting on the market for 4 months.” – Michael, OH
+    </blockquote>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 QuickCash.com | All rights reserved</p>
+    <p><a href="#" style="color: #ccc;">Privacy Policy</a> | <a href="#" style="color: #ccc;">Terms of Use</a></p>
+  </footer>
+
+</body>
+</html>
