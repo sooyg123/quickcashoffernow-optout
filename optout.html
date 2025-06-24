@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,13 +69,12 @@
       margin-top: 20px;
     }
   </style>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
   <div class="container">
     <h1>Opt Out of SMS Communications</h1>
     <p>We respect your privacy. Complete the form below to stop receiving text messages from QuickCashOfferNow.com. You'll be removed from all future campaigns within 24 hours.</p>
-    <form id="optoutForm">
+    <form id="optoutForm" action="https://formspree.io/f/your-form-id" method="POST">
       <label for="phone">Phone Number<span style="color: red;">*</span></label>
       <input type="tel" id="phone" name="Phone Number" required />
 
@@ -87,32 +87,11 @@
       <label for="message">Additional Message (optional)</label>
       <textarea id="message" name="Message" rows="4"></textarea>
 
-      <div class="g-recaptcha" data-sitekey="your-site-key-here"></div>
       <button type="submit">Unsubscribe Me</button>
     </form>
-    <div class="confirmation" id="confirmationMessage">
+    <div class="confirmation" id="confirmationMessage" style="display: none;">
       Thank you. Your request has been received and you’ve been unsubscribed.
     </div>
   </div>
-  <script>
-    document.getElementById('optoutForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const form = e.target;
-      const data = new FormData(form);
-      fetch('https://script.google.com/macros/s/YOUR_SCRIPT_ID_HERE/exec', {
-        method: 'POST',
-        body: data
-      }).then(response => {
-        if (response.ok) {
-          form.style.display = 'none';
-          document.getElementById('confirmationMessage').style.display = 'block';
-        } else {
-          alert('Error submitting form. Please try again later.');
-        }
-      }).catch(error => {
-        alert('Error: ' + error);
-      });
-    });
-  </script>
 </body>
 </html>
